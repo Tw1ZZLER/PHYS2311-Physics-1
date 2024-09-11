@@ -1,0 +1,350 @@
+% Physics Homework Template
+% Useful for completing homework questions from the textbook.
+\documentclass[11pt]{homework}
+\usepackage{siunitx}
+\usepackage{amsmath}
+
+\sisetup{
+  detect-all,          % Detect numbers and units in both math and text mode
+  per-mode = symbol,     % Automatically handle units per operator like m/s
+  output-decimal-marker = {.},  % For decimal points (optional)
+  number-unit-product = \,,     % Adds a space between number and unit
+  parse-numbers = true,   % Parse numbers automatically (use in math mode)    
+}
+
+\newcommand{\hwname}{Corbin Hibler}
+\newcommand{\hwemail}{c-hibler@onu.edu}
+\newcommand{\hwtype}{Ch. 2 HW}
+\newcommand{\hwnum}{}
+\newcommand{\hwclass}{PHYS 2311}
+\newcommand{\hwlecture}{0}
+\newcommand{\hwsection}{Z}
+\newcommand{\ihat}{\hat{\textbf{\i}}}
+\newcommand{\jhat}{\hat{\textbf{\j}}}
+
+\begin{document}
+\maketitle
+
+% Problems
+\renewcommand{\questiontype}{Problem}
+\setcounter{questionCounter}{1}
+
+\question
+\[
+  \frac{\qty{235}{km}}{\qty{2.85}{h}} = \boxed{\qty{82.5}{km/h}}
+\]
+
+\question
+$$
+\vec v_{avg} = \frac{\Delta \vec x}{\Delta t} = \frac{\qty{8.5}{cm} - \qty{5.2}{cm}}{\qty{5.4}{s}}= \frac{\qty{3.3}{cm}}{\qty{5.4}{s}} = \boxed{\qty{0.61}{cm/s}}
+$$
+
+Average speed cannot be calculated, as "negative time" does not make physical sense. Speed is a scalar value, not a vector, and a negative end result is not possible.
+
+\setcounter{questionCounter}{4}
+\question
+  \begin{alphaparts}
+    \questionpart
+      \[
+        \frac{\qty{210}{km}}{\qty{95}{km/h}} = \qty{2.2}{h}
+      \]
+      \[
+        \qty{4.5}{h} - \qty{2.2}{h} = \qty{2.3}{h} 
+      \]
+      \[
+        \qty{2.3}{h} \times \qty{65}{km/h} = \qty{149.5}{km}
+      \]
+      \[
+      \qty{149.5}{km} + \qty{210}{km} = \boxed{\qty{360}{km}} 
+      \]
+    \questionpart
+      \[
+      \overline{S} = \frac{l}{\Delta t} = \frac{\qty{360}{km}}{\qty{4.5}{h}} = \boxed{\qty{80}{km/h}}   
+      \]
+  \end{alphaparts} 
+\question
+  \begin{alphaparts}
+    \questionpart
+      \[
+        \overline{S} = \frac{l}{\Delta t} = \frac{\qty{38}{m} + \qty{19}{m}}{\qty{7.4}{s} + \qty{1.8}{s}} = \frac{\qty{57}{m}}{\qty{9.2}{s}} = \boxed{\qty{6.2}{m/s}}
+      \]
+    \questionpart
+      \[
+      {\vec v_{avg}} = \frac{\Delta \vec x}{\Delta t} = \frac{\qty{38}{\ihat m} - \qty{19}{\ihat m}}{\qty{9.2}{s}} =\boxed{\qty{2.1}{\ihat  m/s}}        
+      \]
+  \end{alphaparts}
+\question
+\begin{alphaparts}
+    \questionpart
+      \[
+        \overline{S} = \frac{l}{\Delta t} =\frac{ 8 \times \qty{400}{m}}{\qty{14.5}{min}} = \frac{\qty{3200}{m}}{\qty{870}{s}} = \boxed{\qty{3.7}{m/s}}
+      \]
+    \questionpart
+      After 8 laps around a track, the person's displacement would be 0, since they stop in the same place they began.
+      \[
+      {\vec v_{avg}} = \frac{\Delta \vec x}{\Delta t} = \frac{\qty{0}{m}}{\qty{870}{s}} =\boxed{\qty{0}{\ihat  m/s}}        
+      \]
+  \end{alphaparts}
+
+\setcounter{questionCounter}{13}
+\question
+  \[
+    \frac{\qty{1900}{km}}{\qty{720}{km/h}} + \frac{\qty{2700}{km}}{\qty{990}{km/h}} = \qty{5.4}{h}
+  \]
+  \[
+    \overline{S} = \frac{l}{\Delta t} = \frac{\qty{4600}{km}}{\qty{5.4}{h}} = \boxed{\qty{850}{km/h}}
+  \]
+
+\setcounter{questionCounter}{22}
+\question
+  \[
+    v_i = \frac{\Delta d}{\Delta t} = \frac{\qty{120}{m}}{\qty{5.0}{s}} = \qty{24}{m/s}
+  \]
+  \[
+    v = v_0 + at
+  \]
+  \[
+    0 = \qty{24}{m/s} + a \times \qty{3.7}{s}
+  \]
+  \[
+    a = \frac{\qty{-24}{m/s}}{\qty{3.7}{s}} = |\qty{-6.5}{m/s^2}| = \boxed{\qty{6.5}{m/s^2}}
+  \]
+  \[
+    \mbox{Acceleration in g's } = \frac{\qty{6.5}{m/s^2}}{\qty{9.80}{m/s^2}} = \boxed{\qty{0.66}{g}}
+  \]
+
+\question
+  \[
+    v = v_0 + at
+  \]
+  \[
+    \qty{120}{km/h} = \qty{65}{km/h} + \qty{1.8}{m/s^2}t
+  \]
+  \[
+    \qty{55}{km/h} = \qty{1.8}{m/s^2}t
+  \]
+  \[
+    \qty{55}{km/h} \times \frac{\qty{1000}{m}}{\qty{1}{km}} \times \frac{\qty{1}{h}}{\qty{3600}{s}} =  \qty{15}{m/s}
+  \]
+  \[
+    \qty{15}{m/s} = \qty{1.8}{m/s^2}t
+  \]
+  \[
+    \frac{\qty{15}{m/s}}{\qty{1.8}{m/s^2}} = t = \boxed{\qty{8.3}{s}}
+  \]
+
+\question
+  \begin{alphaparts}
+    \questionpart
+      \[
+        \vec v_{avg} = \frac{\Delta \vec x}{\Delta t} = \frac{\qty{360}{\ihat m}}{\qty{17.0}{s}} = \boxed{\qty{21.2}{\ihat m/s}}
+      \]
+    \questionpart
+      \[
+        \vec a_{avg} = \frac{\Delta \vec v}{\Delta t} = \frac{\qty{45.0}{m/s} - \qty{11.0}{m/s}}{\qty{17.0}{s}}   = \frac{\qty{34.0}{m/s}}{\qty{17.0}{s}} = \boxed{\qty{2.00}{m/s^2}}
+      \]
+  \end{alphaparts}
+  
+\question
+  \[
+    v(t) = \frac{d}{dt}x(t) = \frac{d}{dt}(4.8t + 7.3t^2) = 4.8 + 14.6t
+  \]
+  \[
+    a(t) = \frac{d}{dt}v(t) = \frac{d}{dt}(4.8 + 14.6t) =  \boxed{\qty{14.6}{m/s^2}}
+  \]
+
+\question
+  \begin{alphaparts}
+    \questionpart
+      A is \unit{m/s} and B is \unit{m/s^2}. 
+    \questionpart
+      \[
+        v(t) = \frac{d}{dt}x(t) = \frac{d}{dt}(At + Bt^2) = A + 2Bt 
+      \]
+      \[
+        a(t) = \frac{d}{dt}v(t) = \frac{d}{dt}(A + 2Bt) = \boxed{2B \: \unit{m/s^2}} 
+      \]
+    \questionpart
+      \[
+        v(6.0) = A + 2Bt = A + 2B \times \qty{6.0}{s} = \boxed{A + 12B \: \unit{m/s}}
+      \]
+      \[
+        a(6.0) = \boxed{ 2B \: \unit{m/s^2}}
+      \]
+    \questionpart
+      \[
+        v(t) = \frac{d}{dt}(At + Bt^{-3}) =\boxed{ A - 3Bt^{-4} \: \unit{m/s}}
+      \]
+  \end{alphaparts}
+
+\setcounter{questionCounter}{34}
+\question
+  \[
+    \vec a = \frac{\Delta \vec v}{\Delta t} = \frac{\qty{9}{m/s}}{\qty{6.5}{s}} = \boxed{\qty{1.4}{m/s^2}} 
+  \]
+  \[
+    \frac{\qty{13}{m/s} + \qty{22}{m/s}}{2} = \qty{17.5}{m/s}
+  \]
+  \[
+    \qty{17.5}{m/s} \times \qty{6.5}{s} = \boxed{\qty{114}{m}}
+  \]
+
+\question
+  \[
+    \vec v^2 = \vec v^2_0 + 2\vec a(x - x_0) 
+  \]
+  \[
+    (\qty{11.5}{m/s})^2 = 2\vec a(\qty{18.0}{m})
+  \]
+  \[
+    \qty{132.25}{m^2/s^2} = 2\vec a(\qty{18.0}{m})
+  \]
+  \[
+    \vec a = \boxed{\qty{3.67}{m/s^2}}
+  \]
+  \[
+    \vec v = = \vec v_0 + \vec at
+  \]
+  \[
+    \qty{11.5}{m/s} = \qty{3.67}{m/s^2}t
+  \]
+  \[
+    t = \boxed{\qty{3.13}{s}}
+  \]
+
+\question
+  \[
+    \vec v = = \vec v_0 + \vec at
+  \]
+  \[
+    \qty{0}{m/s} = \qty{28.0}{m/s} + \vec a\qty{8.60}{s}
+  \]
+  \[
+    \qty{-28.0}{m/s} = \vec a\qty{8.60}{s}
+  \]
+  \[
+   \vec a = \qty{-3.26}{m/s^2}
+  \]
+  \[
+    x=x_{0}+\vec v_{0}t+\frac{1}{2}\vec at^{2} 
+  \]
+  \[
+    x= \qty{28.0}{m/s}\times\qty{8.60}{s} + \frac{1}{2}(\qty{-3.26}{m/s^2}(\qty{8.60}{s})^{2})
+  \]
+  \[
+    x = \boxed{\qty{120}{m}}
+  \]
+
+\question
+  \[
+    \vec v^{2}=\vec v_{0}^{2}+2\vec a\big(x-x_{0}\big)
+  \]
+  \[
+    0 =\vec v_{0}^{2} + 2(\qty{-6.00}{m/s^2})(\qty{45}{m})
+  \]
+  \[
+    -\vec v_{0}^{2} =\qty{-540}{m^2/s^2}  
+  \]
+  \[
+    \vec v_{0} =\sqrt{\qty{540}{m^2/s^2}}
+  \]
+  \[
+    \vec v_{0} =\boxed{\qty{23.2}{m/s}}
+  \]
+
+\setcounter{questionCounter}{52}
+\question
+  \begin{alphaparts}
+    \questionpart
+      \[
+        x = x_{0} + \vec v_{0} t + \frac{1}{2}\vec at^2
+      \]
+      \[
+        x = \frac{1}{2}\vec at^2
+      \]
+      \[
+        t = \sqrt{\frac{2x}{\vec a}}
+      \]
+      \[
+        t = \sqrt{\frac{2(\qty{380}{m})}{\qty{9.80}{m/s^2}}} = \boxed{\qty{8.8}{s}}
+      \]
+    \questionpart
+      \[
+        \vec v = \vec at
+      \]
+      \[
+        \vec v = \qty{9.80}{m/s} \times \qty{8.8}{s} = \boxed{\qty{86.2}{m/s}}
+      \]
+  \end{alphaparts}
+\question
+  \[
+    \vec v = \vec v_0 + at
+  \]
+  \[
+    \qty{55}{km/h} = (\qty{9.80}{m/s^2})t
+  \]
+  \[
+    \frac{\qty{55}{km}}{\qty{1}{h}} \times \frac{\qty{1}{h}}{\qty{3600}{s}} \times\frac{\qty{1000}{m}}{\qty{1}{km}} = \qty{15.28}{m/s}
+  \]
+  \[
+    \frac{\qty{15.28}{m/s}}{\qty{9.80}{m/s^2}} = \boxed{\qty{1.56}{s}}
+  \]
+
+\question
+  \[
+    t_{up} = \frac{\qty{2.6}{s}}{2} = \qty{1.3}{s}
+  \]
+  \[
+    \vec v = \vec v_0 + gt_{up}
+  \]
+  \[
+    0 = S - \qty{9.80}{m/s^2}\times\qty{1.3}{s}
+  \]
+  \[
+    S = \boxed{\qty{12.74}{m/s}}
+  \]
+  \[
+    x = x_0 + \vec v_0 t + \frac{1}{2}\vec at^2
+  \]
+  \[
+    x = (\qty{12.74}{m/s})(\qty{1.3}{s}) + \frac{1}{2}(\qty{-9.80}{m/s^2})(\qty{1.3}{s})^2
+  \]
+  \[
+    x = \boxed{\qty{8.3}{m}}
+  \]
+
+\question
+  \begin{alphaparts}
+    \questionpart
+      \[
+        \vec v^2 = \vec v_0^2 + 2\vec a(x-x_0) 
+      \]
+      \[
+        0 = (\qty{22}{m/s})^2 + 2(\qty{-9.80}{m/s^2})(x) 
+      \]
+      \[
+       \qty{-484}{m^2/s^2} = \qty{-19.6}{m/s^2}(x) 
+      \]
+      \[
+        \frac{\qty{-484}{m^2/s^2}}{\qty{-19.6}{m/s^2}} = x 
+      \]
+      \[
+        x = \boxed{\qty{24.7}{m}}
+      \]
+    \questionpart
+      \[
+        \vec v = \vec v_0 + \vec at_{up}
+      \]
+      \[
+        0 = \qty{22}{m/s} + \qty{9.80}{m/s^2}t_{up}
+      \]
+      \[
+        t_{up} = \frac{|\qty{-22}{m/s}|}{\qty{9.80}{m/s^2}} = \qty{2.24}{s}
+      \]
+      \[
+        t = \qty{2.24}{s} \times 2 = \boxed{\qty{4.48}{s}}
+      \]
+    \questionpart
+      We are ignoring air resistance. We are also using \qty{9.80}{m/s^2} as our constant of acceleration, when Earth's gravity changes consistently depending on the location. 
+  \end{alphaparts}
+\end{document}
