@@ -1,0 +1,348 @@
+% Physics Homework Template
+% Useful for completing homework questions from the textbook.
+\documentclass[11pt]{homework}
+\usepackage{siunitx}
+
+\newcommand{\hwname}{Corbin Hibler}
+\newcommand{\hwemail}{c-hibler@onu.edu}
+\newcommand{\hwtype}{Ch. 5 HW}
+\newcommand{\hwnum}{}
+\newcommand{\hwclass}{PHYS 2311}
+\newcommand{\hwlecture}{0}
+\newcommand{\hwsection}{Z}
+
+\begin{document}
+\maketitle
+
+% Problems
+\renewcommand{\questiontype}{Problem}
+\setcounter{questionCounter}{0}
+
+% Problem 1
+\question
+\[
+\mu_k = 0.30
+\] \[
+m=\qty{26}{kg}
+\]\[
+F_N=(26)(9.8)=\qty{254.8}{N}
+\]\[
+f_s=\mu_kF_N=(0.30)(254.8)=\boxed{\qty{76}{N}}
+\] \[
+\mu_k=0, f_s=(0)(254.8)=\boxed{\qty{0}{N}}
+\]
+% Problem 2
+\question
+\begin{alphaparts}
+    \questionpart
+    \[
+        F_{fr}=\qty{35.0}{N}
+        \]\[
+        m=\qty{4.0}{kg}
+        \] \[
+        F_N=(4.0)(9.8)=\qty{39.2}{N}
+        \] \[
+        F_{fr}=\mu_sF_N
+        \] \[
+        35.0=\mu_s(39.2)
+        \] \[
+        \mu_s = \boxed{0.89}
+        \] 
+    \questionpart
+    \[
+    f_k = \mu_kF_N
+    \] \[
+    F_{net} = F_{app} - f_k
+    \]\[ 
+    ma  - F_{app} = - f_k
+    \] \[
+    ma - F_{app} = - \mu_kF_N
+    \] \[
+    \frac{ma-F_{app}}{-F_N}=\mu_k
+    \] \[
+    \mu_k=\frac{(4.0)(0.60)-35.0}{-39.2}
+    \] \[
+    \mu_k = \boxed{0.83}
+    \] 
+\end{alphaparts}
+
+% Problem 3
+\question
+\[
+a = 0.20g
+\] 
+\[
+ F_{fr} \le \mu_{s}F_{N}
+\] \[
+\frac{F_{fr}}{F_N} \le \mu_s
+\] \[
+\frac{ma}{mg} \le \mu_s
+\] \[
+\frac{a}{g} \le \mu_s
+\] \[
+\mu_s \ge \boxed{0.20}
+\] 
+
+% Problem 6
+\setcounter{questionCounter}{5}
+\question
+$a_{nf}$ meaning "no friction" or frictionless acceleration.
+\[
+    m = \qty{25.0}{kg}  
+\]
+\[
+    a = \qty{0.36}{m/s^2}
+\]
+\[
+    a_{nf} = g \sin \theta
+\]
+\[
+    \vec{F}_{net} = f_k + F_1
+\]
+\[
+    ma=f_k+ma_{nf}
+\]
+\[
+    f_k = ma_{nf}-ma 
+\]
+\[
+    f_k = (25.0)((9.8)\sin(27))-(25.0)(0.36)= \boxed{\qty{102}{N}}
+\]
+\[
+    F_N = mg\cos\theta
+\]
+\[
+f_k = \mu_kF_N
+\]
+\[
+\mu_k =\frac{f_k}{F_N}= \frac{f_k}{mg\cos\theta} = \frac{102}{(25.0)(9.8)\cos(27)} = \boxed{0.47}
+\]
+
+% Problem 7 
+\question
+\[
+    a_x=\qty{-3.80}{m/s^2}, \quad \theta=\qty{9.3}{\degree}
+\]
+\[
+F_N =mg
+\]
+\[
+f_s=\mu_s F_N
+\]
+\[
+ma_x=\mu_smg
+\]
+\[
+a_x=\mu_sg 
+\]
+\[
+    \mu_s = \frac{a_x}{g} = \left| \frac{(-3.80)}{9.8}\right| = 0.388 
+\]
+\[
+F_N = mg\cos\theta
+\]
+\[
+    \Sigma F = F_g - f_k
+\]
+\[
+    \Sigma F = mg\sin\theta + \mu_s mg \cos\theta
+\]
+\[
+a=\frac{\Sigma F}{m}  
+\] 
+\[
+a=g\sin\theta+\mu_s g \cos\theta
+\]
+\[
+    a=(9.8)\sin(9.3)+(0.388)(9.8)\cos(9.3)=\boxed{\qty{5.3}{m/s^2}}
+\]
+
+% Problem 19
+\setcounter{questionCounter}{18}
+\question
+\begin{alphaparts}
+    \questionpart
+    \[
+        \mu_k=0.18, \quad m_1 = \qty{65}{kg}, \quad m_2 = \qty{125}{kg}
+    \]
+    \[
+        f_k = \mu_kF_N
+    \]
+    \[
+        \Sigma F = F_{app} - f_k
+    \]
+    \[
+        ma = F_{app} - \mu_kF_N
+    \]
+    \[
+        a = \frac{F_{app} - \mu_kmg}{m} = \frac{650-(0.18)(190)(9.8)}{190} = \boxed{\qty{1.7}{m/s^2}}
+    \]
+    \questionpart
+    \[
+        F_{12} = f_{k2} + m_2a
+    \]
+    \[
+        F_{12} = \mu_kmg + m_2a = (0.18)(125)(9.8) + (125)(1.7) = \boxed{\qty{430}{N}}
+    \]
+    \questionpart
+
+    \[
+        \mu_k=0.18, \quad m_1 = \qty{125}{kg}, \quad m_2 = \qty{65}{kg}
+    \]
+    \[
+        f_k = \mu_kF_N
+    \]
+    \[
+        \Sigma F = F_{app} - f_k
+    \]
+    \[
+        ma = F_{app} - \mu_kF_N
+    \]
+    \[
+        a = \frac{F_{app} - \mu_kmg}{m} = \frac{650-(0.18)(190)(9.8)}{190} = \boxed{\qty{1.7}{m/s^2}}
+    \]
+    \[
+        F_{12} = f_{k2} + m_2a
+    \]
+    \[
+        F_{12} = \mu_kmg + m_2a = (0.18)(65)(9.8) + (65)(1.7) = \boxed{\qty{220}{N}}
+    \]
+\end{alphaparts}
+
+% Problem 23
+\setcounter{questionCounter}{22}
+\question
+\[
+\mu_s = 0.40, \quad \mu_k = 0.30
+\]
+\begin{alphaparts}
+    \questionpart
+    \[
+    f_s = \mu_sF_N
+    \]
+    \[
+    f_s = \mu_sm_Ag
+    \]
+    \[
+    F_B = m_bg
+    \]
+    \[
+    \mu_sm_Ag = m_Bg
+    \]
+    \[
+        m_A = \frac{m_B}{\mu_s} = \frac{2.0}{0.40} = \boxed{\qty{5.0}{kg}}
+    \]
+    \questionpart
+    \[
+        a=0, \quad \Sigma F = 0
+    \]
+    \[
+    \Sigma F = F_A + F_B = 0
+    \]
+    \[
+    \mu_km_Ag - m_Bg = 0
+    \]
+    \[
+        m_A = \frac{m_B}{\mu_k} = \frac{2.0}{0.30}=\boxed{\qty{6.7}{kg}}
+    \]
+\end{alphaparts}
+
+% Problem 35
+\setcounter{questionCounter}{34}
+\question
+\[
+    m = \qty{1200}{kg}, \quad r = \qty{90.0}{m}, \quad \mu_s = 0.65
+\]
+\[
+    \vec{a}=\frac{v^2}{r}
+\]
+\[
+     v^2=\mu_sgr
+\]
+\[
+    v = \sqrt{\mu_sgr} = \sqrt{(0.65)(9.8)(90.0)} = \boxed{\qty{24}{m/s}}
+\]
+We know that this value is independent of the mass as the mass gets canceled out in the equation for centripetal force.
+
+% Problem 36
+\question
+\[
+    r = \qty{1.40}{m}, \quad v = \qty{1.30}{m/s}
+\]
+\begin{alphaparts}
+    \questionpart
+    \[
+        a=\frac{v^2}{r}=\frac{(1.30)^2}{1.40} = \boxed{\qty{1.21}{m/s^2}}
+    \]
+    \questionpart
+    \[
+        F_c = ma = (22.5)(1.21) = \boxed{\qty{27.2}{N}}
+    \]
+\end{alphaparts}
+
+% Problem 38
+\setcounter{questionCounter}{37}
+\question
+\[
+    v = \qty{525}{m/s}, \quad r = \qty{4800}{m}
+\]
+\[
+    a = \frac{v^2}{r} = \frac{(525)^2}{4800} = \qty{57.4}{m/s^2}
+\]
+\[
+    a = \frac{57.4}{9.8} = \boxed{\qty{5.86}{g's}}
+\]
+
+% Problem 45
+\setcounter{questionCounter}{44}
+\question
+\[
+    v = \qty{50}{km/h} \times \frac{\qty{1000}{m}}{\qty{3600}{s}} = \qty{13.9}{m/s}
+\]
+From Table 5-1, coefficient of static friction for rubber on wet concrete:
+\[
+\mu_s = 0.7
+\]
+\[
+F_c = f_s
+\]
+\[
+f_s = \mu_sF_N
+\]
+\[
+F_c = \frac{mv^2}{r}
+\]
+\[
+\frac{mv^2}{r} = \mu_smg 
+\]
+\[
+\frac{v^2}{r}=\mu_sg 
+\]
+\[
+v^2= \mu_sgr
+\]
+\[
+    r = \frac{v^2}{\mu_sg} = \frac{(13.9)^2}{(0.7)(9.8)} = \boxed{\qty{30}{m}} 
+\]
+% Problem 65
+\setcounter{questionCounter}{64}
+\question
+\[
+    v = \qty{12}{m/s}, \quad m = \qty{950}{kg}, \quad r = \qty{250}{m}, \quad a_{\tan} = \qty{3.2}{m/s^2}
+\]
+\[
+    F_{\tan} = ma_{\tan} = (950)(3.2) = \boxed{\qty{3.0e3}{N}}
+\]
+\[
+    a_R = \frac{v^2}{r} = \frac{(12)^2}{250} = \qty{0.58}{m/s^2}
+\]
+\[
+    F_{R} = ma_R = (950)(0.58) = \boxed{\qty{550}{N}}
+\]
+
+
+
+
+
+
+\end{document}
