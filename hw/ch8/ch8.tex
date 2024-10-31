@@ -70,7 +70,7 @@ x = \sqrt{\frac{2(45.0)}{78.0}} = \boxed{\qty{1.07}{m}}
         \]
     \questionpart
         \[
-            U = mgh = (1.65)(9.8)(2.20-1.60)=\boxed{\qty{9.7}{}}
+        U = mgh = (1.65)(9.8)(2.20-1.60)=\boxed{\qty{9.7}{}}
         \]
     \questionpart
     Following the principle that $W = -\Delta U$, we know that when lifting the book from the ground to \qty{2.20}{m} we can calculate the work done by the person from the change in potential energy of the book.
@@ -95,57 +95,242 @@ U(x)=\boxed{-\frac{k}{2x^2}+\frac{k}{\qty{8}{m^2}}}
 
 % Problem 8
 \question
-
+\[
+\vec{F}(x,y,z)=-\frac{\partial U}{\partial x}(\hat{i})-\frac{\partial U}{\partial y}(\hat{j})-\frac{\partial U}{\partial z}(\hat{k})
+\]
+\[
+=-\frac{\partial 3x^2+2xy+4y^2z}{\partial x}(\hat{i})-\frac{\partial 3x^2+2xy+4y^2z}{\partial y}(\hat{j})-\frac{\partial 3x^2+2xy+4y^2z}{\partial z}(\hat{k})
+\]
+\[
+=-\frac{\partial 3x^2+2xy}{\partial x}(\hat{i})-\frac{\partial 2xy+4y^2z}{\partial y}(\hat{j})-\frac{\partial 4y^2z}{\partial z}(\hat{k})
+\]
+\[
+    =\boxed{-(6x+2y) \hat{i} - (2x + 8yz)\hat{j}-(4y^2)\hat{k}}
+\]
 
 
 % Problem 9
 \question
+\[
+    \vec{F}=(-kx+ax^3+bx^4)\hat{i}
+\]
+\begin{alphaparts}
+    \questionpart
+        Yes, the force is conservative. If we use the definition that the gradient $\nabla F = 0$ for conservative forces, we know that since this function only contains an $x$ component, it is conservative.
+    \questionpart
+    \[
+    U(x)=-\int  F(x)\,dx
+    \]
+    \[
+        =-\int(-kx+ax^3+bx^4)\, dx = \int(kx-ax^3-bx^4)\, dx = \frac{1}{2}kx^2 - \frac{1}{4}ax^4-\frac{1}{5}bx^5 + C
+    \]
+    \[
+        U(x) = \boxed{\frac{1}{2}kx^2 - \frac{1}{4}ax^4-\frac{1}{5}bx^5 + C}
+    \]
+\end{alphaparts}
 
 
-
-% Problem 12
+% Problem 12 (example done in class)
 \setcounter{questionCounter}{11}
 \question
-
+\[
+    \vec{v_i} = \qty{5.0}{m/s}, \quad \vec{v_f}=\qty{0}{m/s}, \quad h_i = \qty{0}{m}
+\]
+\[
+\Delta K = - \Delta U
+\]
+\[
+    \frac{1}{2}m(v_f^2-v_i^2)=-mg(h_f-h_i)
+\]
+\[
+    h_f=-\frac{v_i^2-v_i^2}{2g}+h_i=-\frac{0-(5.0)^2}{2(9.8)}+0=\boxed{\qty{1.28}{m}}
+\]
+The length of the vine does not matter as it is not included in our calculation. However, if the vine is too short, then Jane would eventually end up wrapping around going downward. So the length must be $L>\frac{\Delta h}{2}$.
 
 
 % Problem 13
 \question
-
+\[
+\Delta K = - \Delta U
+\]\[
+\frac{1}{2}m(v_f^2-v_i^2)=-mg(h_f-h_i)
+\]
+\[
+    v_i = \sqrt{2g(h_f-h_i)-v_f^2} = \sqrt{2(9.8)(1.22)} = \boxed{\qty{4.89}{m/s}}
+\]
 
 
 % Problem 17
 \setcounter{questionCounter}{16}
 \question
+\[
+    \vec{v}=\qty{85}{km/h}, \quad m=\qty{1400}{kg}, \quad x=\qty{2.2}{m}
+\]\[
+U_S = \frac{1}{2}kx^2
+\]
+\[
+\Delta K = - \Delta U
+\]
+\[
+    \frac{1}{2}mv^2 = \frac{1}{2}kx^2
+\]
+\[
+mv^2 = kx^2 
+\]
+\[
+    k=\frac{mv^2}{x^2}=\frac{(1400)(23.6)^2}{(2.2)^2}=\boxed{\qty{1.6e5}{N/m}}
+\]
 
 
 
 % Problem 19
 \setcounter{questionCounter}{18}
 \question
+\begin{alphaparts}
+    % Part A
+    \questionpart
+\[
+    U_S = -\frac{1}{2}kx^2 = -\frac{1}{2}(875)(0.220)^2 = \qty{-21.175}{J}
+\]
+\[
+\Delta K = - \Delta U
+\]
+\[
+\Delta K = 21.175
+\]
+\[
+    \frac{1}{2}mv^2 = 21.175
+\]
+\[
+    v = \sqrt{\frac{2(21.175)}{m}} =  \sqrt{\frac{2(21.175)}{0.380}} = \boxed{\qty{10.4}{m/s}}
+\]
+    % Part B
+    \questionpart
+    \[
+    \Delta K = \Delta U
+    \]\[
+    \frac{1}{2}mv^2 = mgh
+    \]
+    \[
+    \frac{mv^2}{2mg}=h
+    \]
+    \[
+        h = \frac{v^2}{2g}=\frac{(10.4)^2}{2(9.8)}
+    = \boxed{\qty{5.69}{m}}
+    \]
+    
 
+\end{alphaparts}
 
-
-% Problem 28
+% Problem 28 (example done in class)
 \setcounter{questionCounter}{27}
 \question
-
-
+\[
+K_i + U_i = K_f + U_f + E_{\text{therm}}
+\]
+\[
+    0 +mgh = \frac{1}{2}mv^2 + 0 + E_{\text{therm}}
+\]
+\[
+    mgh_f - \frac{1}{2}mv_f^2 = E_{\text{therm}}
+\]
+\[
+    E_{\text{therm}}=(16.0)(9.8)(2.20)-\frac{1}{2}(16.0)(1.15)^2 = \boxed{\qty{334}{J}}
+\]
 
 % Problem 29
 \question
-
-
+\begin{alphaparts}
+\questionpart
+\[
+    \mu_k = 0.090, \quad v_i = \qty{0}{m/s}, \quad d = \qty{85}{m}, \quad h_i = 85\sin(28) \unit{m}, \quad h_f = \qty{0}{m}
+\]
+\[
+K_i + U_i = K_f + U_f + f_kd 
+\]
+\[
+    0 + mgh_i = \frac{1}{2}mv_f^2 + 0 + \mu_kmg\cos(\theta) d 
+\]
+\[
+    gh_i - \mu_kg\cos(\theta)d = \frac{1}{2}v_f^2
+\]
+\[
+    v_f=\sqrt{2g(h_i-\mu_k\cos\theta d)}=\sqrt{2(9.8)(85\sin(28)-(0.090)(85)(\cos(28))} = \boxed{\qty{25.49}{m/s}}
+\]
+\questionpart
+\[
+    v_i = \qty{25}{m/s}, \quad v_f = \qty{0}{m/s}, \quad h_f, h_i = \qty{0}{m}, \quad \mu_k = 0.090
+\]
+\[
+K_i + U_i = K_f + U_i + f_kd
+\]
+\[
+    \frac{1}{2}mv_i^2+0=0+0+\mu_kmgd
+\]
+\[
+    d = \frac{v_i^2}{2\mu_kg}=\frac{(25.49)^2}{2(0.090)(9.8)}=\boxed{\qty{368}{m}}
+\]
+\end{alphaparts}
 
 % Problem 30
 \question
-
-
+\begin{alphaparts}
+    % Part A
+    \questionpart
+    \[
+    h_i = \qty{14.0}{m}, \quad h_f = \qty{0}{m}, \quad v_i = \qty{0}{m/s}, \quad m = \qty{0.145}{kg}
+    \]
+    \[
+    K_i + U_i = K_f + U_f
+    \]
+    \[
+        0 + mgh_i = \frac{1}{2}mv_f^2 + 0
+    \]
+    \[
+        v_f = \sqrt{2gh_i}=\sqrt{2(9.8)(14.0)}=\boxed{\qty{16.57}{m/s}}
+    \]
+    
+    
+    
+    % Part B
+    \questionpart
+    \[
+        K_i + U_i = K_f + U_f + W_{air}
+    \]
+    \[
+        0 + mgh_i = \frac{1}{2}mv_f^2 + 0 + W_{air}
+    \]
+    \[
+        mgh_i - \frac{1}{2}mv_f^2 = W_{air}
+    \]
+    \[
+        W_{air} = m(gh_i-\frac{1}{2}v_f^2)=(0.145)((9.8)(14.0)-\frac{1}{2}(12.5)^2) = \qty{8.57}{J}
+    \]
+    \[
+        F = \frac{W}{d} = \frac{8.57}{14.0} = \boxed{\qty{0.61}{N}}
+    \]
+\end{alphaparts}
 
 % Problem 73
 \setcounter{questionCounter}{72}
 \question
+\begin{alphaparts}
+    % Part A
+    \questionpart
+    Where $\frac{dU(x)}{dx} < 0 $\\
+    $[0,3), (6,9)$
 
+    % Part B
+    \questionpart
+    Where $\frac{dU(x)}{dx} = 0$\\
+    Minimum is $x=\qty{3}{m},\qty{6}{m},\qty{9}{m}$
+
+    % Part C
+    \questionpart
+    Where the slope is the highest.\\
+    Maximum is $x\approx \qty{4}{m}$
+
+\end{alphaparts}
 
 
 \end{document}
