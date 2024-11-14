@@ -24,38 +24,205 @@
 
 % Problem 1
 \question
+\begin{alphaparts}
+\questionpart
+0.785 rad, $\frac{\pi}{4}$ rad
+\questionpart
+1.0471 rad, $\frac{\pi}{3}$ rad
+\questionpart
+1.571 rad, $\frac{\pi}{2}$ rad
+\questionpart
+6.283 rad, $2\pi$ rad
+\questionpart
+7.7667 rad, $\frac{89\pi}{36}$ rad
+\end{alphaparts}
 
 
 % Problem 4
 \setcounter{questionCounter}{3}
 \question
-
+\[
+    8500 \unit{rpm} \cdot \frac{\qty{1}{min}}{\qty{60}{s}} \cdot \frac{\qty{2}{\pi rad}}{\qty{1}{rev}} = \qty{890.12}{rad /s} = \omega
+\]
+\[
+t = 4.0
+\]
+\[
+    \alpha = \frac{\Delta\omega}{\Delta t}=\frac{890.12}{4.0}=\frac{890.12-0}{4.0} = \boxed{\qty{223}{rad /s^2}}
+\]
 
 % Problem 5
 \question
+\begin{alphaparts}
+\questionpart
+\[
+    7200 \unit{rpm} \cdot \frac{\qty{1}{min}}{\qty{60}{s}} \cdot \frac{\qty{2}{\pi rad}}{\qty{1}{rev}} = \boxed{240\pi\, \unit{rad /s}}
+\]
+\questionpart
+\[
+r = \qty{3.00}{cm} = \qty{0.03}{m}
+\]
+\[
+    v= r \omega = (0.03)(240\pi) = \boxed{\qty{22.62}{m /s}}
+\]
+\questionpart
+\[
+    22.62 \cdot \frac{\qty{1}{b}}{\qty{0.5}{\micro\meter}}= \boxed{\qty{45.24e6}{bps}}
+\]
+
+
+
+\end{alphaparts}
 
 
 % Problem 6
 \question
+\[
+    C=\frac{\text{distance}}{\text{revolutions}}=\frac{3.1}{12.0}=\qty{.258}{m}
+\]
+\[
+C =\pi \cdot d = \frac{\qty{.258}{m}}{\pi}=d=\qty{0.822}{m}=\boxed{\qty{8.2}{cm}}
+\]
+
 
 
 % Problem 19
 \setcounter{questionCounter}{18}
 \question
-
+\[
+    15000 \unit{rpm} \cdot \frac{\qty{1}{min}}{\qty{60}{s}} \cdot \frac{\qty{2}{\pi rad}}{\qty{1}{rev}} = 1.57\, \unit{rad /s}
+\]
+\[
+\alpha = \frac{\omega_f - \omega_0}{t}
+\]
+\[
+\alpha = \frac{1570.8 \, \text{rad/s} - 0}{220 \, \text{s}} = 7.14 \, \text{rad/s}^2
+\]
+\[
+\theta = \omega_0 t + \frac{1}{2} \alpha t^2
+\]
+\[
+\theta = \frac{1}{2} \times 7.14 \, \text{rad/s}^2 \times (220 \, \text{s})^2= 172,960 \, \text{rad}
+\]
+\[
+\text{rev} = \frac{172,960 \, \text{rad}}{2\pi \, \text{rad/rev}} = \boxed{\qty{27855}{rev}}
+\]
 
 % Problem 20
 \question
+\begin{alphaparts}
+\questionpart
+\[
+\theta(t)=\theta_{0}+\omega_{0}t+\frac{1}{2}\alpha t^2
+\]
+\[
+    \text{rev} = 26\cdot2\pi = 52\pi \, \text{rev}
+\]
 
+\[
+52\pi=\frac{1}{2} \alpha (60)^2
+\]
+\[
+    \alpha = \frac{(52\pi)(2)}{60^2}=\boxed{\qty{0.0909}{rad /s^2}}
+\]
+
+\questionpart
+\[
+\omega_f = \omega_0 + \alpha t
+\]
+\[
+\omega_f = 0 + (0.0909 \, \text{rad/s}^2)(60 \, \text{s})
+\]
+\[
+\omega_f = 5.454 \, \text{rad/s}
+\]
+\[
+\omega_f = 5.454 \, \text{rad/s} \times \frac{60 \, \text{s}}{2\pi \, \text{rad}}
+\]
+\[
+    \omega_f \approx \boxed{52.0 \, \text{rpm}}
+\]]
+\end{alphaparts}
 
 % Problem 21
 \question
+\begin{alphaparts}
+\questionpart
+\[
+\omega_0 = 780 \, \text{rev/min} \times \frac{2\pi \, \text{rad}}{60 \, \text{s}} = 81.68 \, \text{rad/s}
+\]
+\[
+\theta = 1250 \, \text{rev} \times 2\pi \, \text{rad/rev} = 2500\pi \, \text{rad}
+\]
+\[
+\omega_f^2 = \omega_0^2 + 2\alpha\theta
+\]
+\[
+0= (81.68 \, \text{rad/s})^2 + 2\alpha (2500\pi \, \text{rad})
+\]
+\[
+2\alpha (2500\pi) = -(81.68)^2
+\]
+\[
+\alpha = \frac{-(81.68)^2}{2 \times 2500\pi}
+\]
+\[
+    \alpha \approx \boxed{-0.42 \, \text{rad/s}^2}
+\]
+\questionpart
+\[
+\omega_f = \omega_0 + \alpha t
+\]
+\[
+ 0= 81.68 \, \text{rad/s} + (-0.42 \, \text{rad/s}^2) t
+\]
+\[
+t = \frac{81.68 \, \text{rad/s}}{0.42 \, \text{rad/s}^2}
+\]
+\[
+    t \approx \boxed{192.3 \, \text{s}}
+\]
+\end{alphaparts}
 
 
 % Problem 25
 \setcounter{questionCounter}{24}
 \question
+\begin{alphaparts}
+\questionpart
+\[
+ \theta = 9.5 t - 13.0 t^2 + 1.6 t^4 
+\]
+\[
+ \omega = 9.5 - 26.0 t + 6.4 t^3 
+\]
+\questionpart
+\[
+ \alpha = -26.0 + 19.2t^2 
+\]
+\questionpart
+\[
+ \omega(3.0) = 9.5 - 26.0(3.0) + 6.4 (3.0)^3 = \boxed{\qty{104.3}{rad /s}}
+\]
+\[
+ \alpha(3.0) = -26.0 + 19.2(3.0)^2 = \boxed{\qty{146.8}{rad /s^2}} 
+\]
+\questionpart
+\[
+    \omega_{avg} = \frac{\Delta \theta}{\Delta t} = \frac{\theta(3.0)-\theta(2.0)}{3.0-2.0}
+    \]\[
+    =\frac{(9.5 (3.0) - 13.0 (3.0)^2 + 1.6 (3.0)^4)-(9.5 (2.0) - 13.0 (2.0)^2 + 1.6 (2.0)^4)}{1.0}=\boxed{\qty{48.5}{rad /s}}
+\]
+\questionpart
+\[
+    \alpha_{avg}= \frac{\Delta \omega}{\Delta t}=\frac{\omega(3.0)-\omega(2.0)}{3.0-2.0}
+\]
+\[
+    =\frac{(9.5 - 26.0(3.0) + 6.4 (3.0)^3)-(9.5 - 26.0 (2.0) + 6.4 (2.0)^3)}{1.0} = \boxed{\qty{95.6}{rad /s^2}}
+\]
 
+
+\end{alphaparts}
 
 % Problem 28
 \setcounter{questionCounter}{27}
