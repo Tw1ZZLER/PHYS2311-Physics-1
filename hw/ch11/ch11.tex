@@ -1,0 +1,262 @@
+% Physics Homework Template
+% Useful for completing homework questions from the textbook.
+\documentclass[11pt]{homework}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\newcommand{\hwname}{Corbin Hibler}
+\newcommand{\hwemail}{c-hibler@onu.edu}
+\newcommand{\hwtype}{Ch. 11 HW}
+\newcommand{\hwnum}{}
+\newcommand{\hwclass}{PHYS 2311}
+\newcommand{\hwlecture}{0}
+\newcommand{\hwsection}{2}
+
+\begin{document}
+\maketitle
+
+% Problems
+\renewcommand{\questiontype}{Problem}
+\setcounter{questionCounter}{0}
+
+% Problem 1
+\question
+\[
+    I=mR^2 = (0.210)(1.25)^2 = \qty{0.328}{kg \cdot m^2}
+\]
+\[
+\vec{L}=I\vec{\omega} = (0.328)(10.4) = \boxed{\qty{3.4112}{kg \cdot m^2 /s}}
+\]
+
+
+
+
+% Problem 2
+\question
+\begin{alphaparts}
+\questionpart
+\[
+I = \frac{1}{2}mR^2 = \frac{1}{2}(2.8)(0.18)^2 = \qty{0.045}{kg \cdot m^2}
+\]
+\[
+    \qty{1500}{rpm} = \frac{2\pi\,\text{rad}}{\qty{60}{s}}=\qty{157.1}{rad /s}
+\]
+\[
+L = I\omega = (0.045)(157.1) = \boxed{\qty{7.0695}{kg \cdot m^2 /s}}
+\]
+
+\questionpart
+\[
+\omega=\omega_{0}+\alpha t
+\]
+\[
+0 = 157.1 + \alpha (6.0)
+\]
+\[
+\alpha = \frac{-157.1}{6.0} = \qty{-26.183}{rad /s^2}
+\]
+\[
+\tau = I\alpha = (0.045)(26.183) = \boxed{\qty{1.178}{Nm}}
+\]
+
+\end{alphaparts}
+
+
+% Problem 3
+\question
+\[
+L_i = L_f
+\]
+\[
+L_i = I \cdot \omega
+\]
+\[
+L_f=2I \omega_f
+\]
+\[
+I \omega = 2 I \omega_f
+\]
+\[
+\omega_f = \frac{I\omega}{2I}
+\]
+\[
+\boxed{\omega_f = \frac{1}{2}\omega}
+\]
+
+
+
+% Problem 5
+\setcounter{questionCounter}{4}
+\question
+\[
+\omega_i = \qty{0.67}{rev /s} \quad \omega_f=\qty{2.5}{rev /s}
+\]
+\[
+\omega_i = \qty{4.19}{rad /s} \quad \omega_f=\qty{15.71}{rad /s}
+\]
+\[
+I_i = \qty{4.9}{kg \cdot m /s^2}
+\]
+\[
+L_i = L_f
+\]
+\[
+(4.9)(4.19) = I_f(15.71)
+\]
+\[
+I_f = \boxed{\qty{1.317}{kg \cdot m^2}}
+\]
+The dancer lowers her moment of inertia. The simplest way to do this is by pulling in her arms to decrease her radius.
+
+% Problem 9
+\setcounter{questionCounter}{8}
+\question
+\[
+L_{\text{initial}} = L_{\text{final}}
+\]
+\[
+L_{\text{initial}} = I_{\text{disk}} \cdot \omega_d
+\]
+\[
+L_{\text{final}} = \left( I_{\text{disk}} + I_{\text{rod}} \right) \cdot \omega_f
+\]
+\[
+I_{\text{disk}} \cdot \omega_d = \left( I_{\text{disk}} + I_{\text{rod}} \right) \cdot \omega_f
+\]
+\[
+I_{\text{disk}} = \frac{1}{2} M R^2
+\]
+\[
+I_{\text{rod}} = \frac{1}{3} M R^2
+\]
+\[
+\left( \frac{1}{2} M R^2 \right) \cdot \omega_d = \left( \frac{1}{2} M R^2 + \frac{1}{3} M R^2 \right) \cdot \omega_f
+\]
+\[
+\frac{1}{2} M R^2 \cdot \omega_d = \frac{5}{6} M R^2 \cdot \omega_f
+\]
+\[
+\frac{1}{2}(4.1) = \frac{5}{6} \cdot \omega_f
+\]
+\[
+\omega_f = \boxed{\qty{2.46}{rev /s}}
+\]
+
+
+% Problem 36
+\setcounter{questionCounter}{35}
+\question
+\[
+\vec{L} = \vec{r} \times \vec{p}
+\]
+\[
+\vec{p} = m \vec{v}
+\]
+\[
+\vec{r}_O = d \hat{j}
+\]
+\[
+\vec{L}_O = \vec{r}_O \times \vec{p} = (d \hat{j}) \times (m v \hat{i})
+\]
+\[
+\boxed{\vec{L}_O = m v d \hat{k}}
+\]
+\[
+\vec{r}_{O'} = 0
+\]
+\[
+\vec{L}_{O'} = \vec{r}_{O'} \times \vec{p} = 0
+\]
+\[
+\vec{L}_O = m v d \hat{k}
+\]
+\[
+    \boxed{\vec{L}_{O'} = 0}
+\]
+
+
+% Problem 42
+\setcounter{questionCounter}{41}
+\question
+\begin{alphaparts}
+\questionpart
+
+\[
+L_{\parallel} = I \cdot \omega
+\]
+\[
+I = m r^2
+\]
+\[
+L_{\parallel} = 2 \cdot (m r^2) \cdot \omega = 2 \cdot (0.480 \cdot 0.24^2) \cdot 4.5 = \qty{0.249}{kg \cdot m^2 /s}
+\]
+\[
+L_{\perp} = m \cdot v \cdot h
+\]
+\[
+v = r \cdot \omega
+\]
+\[
+    L_{\perp} = 2 \cdot (m \cdot r \cdot \omega \cdot h) = 2 \cdot (0.480 \cdot 0.24 \cdot 4.5 \cdot 0.42) = \qty{0.435}{kg \cdot m^2 /s}
+\]
+\[
+    L = \sqrt{L_{\parallel}^2 + L_{\perp}^2} = \sqrt{(0.249)^2 + (0.435)^2} = \boxed{\qty{0.502}{kg \cdot m^2 /s}}
+\]
+\questionpart
+\[
+\theta = \tan^{-1} \left( \frac{L_{\perp}}{L_{\parallel}} \right) = \boxed{\qty{60.26}{\degree}}
+\]
+\end{alphaparts}
+
+
+% Problem 48
+\setcounter{questionCounter}{47}
+\question
+\[\ell = 1.0 \, \text{m}, \quad
+M = 270 \, \text{g} = 0.270 \, \text{kg}, \quad
+m_b = 3.5 \, \text{g} = 0.0035 \, \text{kg}
+\]\[
+v_{\text{in}}=250 \, \text{m/s}, \quad
+v_{\text{out}} = 140 \, \text{m/s}, \quad
+\ell/4 = 0.25 \, \text{m}, \quad
+L_i = 0
+\]
+\[
+L_{\text{initial}} = L_{\text{final}}
+\]
+\[
+L_{\text{initial}} = m_b v_{\text{in}} r
+\]
+\[
+L_{\text{initial}} = (0.0035)(250)(0.25) = 0.21875 \, \text{kg·m}^2/\text{s}
+\]
+\[
+L_{\text{bullet}} = m_b v_{\text{out}} r = (0.0035)(140)(0.25) = 0.1225 \, \text{kg·m}^2/\text{s}
+\]
+\[
+I = \frac{1}{12} M L^2 = \frac{1}{12} (0.270)(1.0)^2 = 0.0225 \, \text{kg·m}^2
+\]
+\[
+L_{\text{stick}} = I \omega = (0.0225) \omega
+\]
+\[
+L_{\text{final}} = L_{\text{bullet}} + L_{\text{stick}} = 0.1225 + 0.0225\omega
+\]
+\[
+L_{\text{initial}} = L_{\text{final}}
+\]
+\[
+0.21875 = 0.1225 + 0.0225 \omega
+\]
+\[
+0.0225 \omega = 0.21875 - 0.1225 = 0.09625
+\]
+\[
+    \omega = \frac{0.09625}{0.0225} = \boxed{ 4.28 \, \text{rad/s}}
+\]
+
+
+\end{document}
