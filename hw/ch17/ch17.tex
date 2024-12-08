@@ -24,53 +24,215 @@
 % Problem 3
 \setcounter{questionCounter}{2}
 \question
-
+\begin{alphaparts}
+\questionpart
+\[
+T_{C} =\frac{5}{9}(T_{F}-32)
+\]
+\[
+T_C = \frac{5}{9}(68-32) = \boxed{\qty{20}{\degree C}}
+\]
+\questionpart
+\[
+T_{F}=\frac{9}{5}T_{C}+32
+\]
+\[
+T_F = \frac{9}{5}(1900)+32 = \boxed{\qty{3452}{\degree F}}
+\]
+\end{alphaparts}
 
 % Problem 4
 \question
-
+\[
+T_{C} =\frac{5}{9}(T_{F}-32)
+\]
+\[
+    T_{C,hot}=\frac{5}{9}(136-32) = \boxed{\qty{57.8}{\degree C}}
+\]
+\[
+    T_{C,cold}=\frac{5}{9}(-129-32) = \boxed{\qty{-89.4}{\degree C}}
+\]
 
 % Problem 8
 \setcounter{questionCounter}{7}
 \question
+\[
+    \ell_0 = \qty{14}{m}, \quad \Delta T = \qty{80}{\degree C}, \quad \alpha = 12 \times 10^{-6}
+\]
+\[
+\Delta \ell=\alpha \ell_{0} \Delta T
+\]
+\[
+    \Delta \ell=(12\times 10^{-6})(14)(80) = \boxed{\qty{13.44}{mm}}
+\]
+
 
 
 % Problem 10
 \setcounter{questionCounter}{9}
 \question
+\[
+\Delta \ell=\alpha \ell_{0} \Delta T
+\]
+Super Invar:
+\[
+    \Delta \ell=(0.20 \times 10^{-6})(1.8)(7.5) = \boxed{\qty{2.7}{\micro m}}
+\]
+Steel:
+\[
+    \Delta \ell=(12 \times 10^{-6})(1.8)(7.5) = \boxed{\qty{162}{\micro m}}
+\]
+
 
 
 % Problem 20
 \setcounter{questionCounter}{19}
 \question
-
+\[
+d_{\text{p}} = 8.756 \, \text{cm}, \quad d_{\text{r}} = 8.742 \, \text{cm}
+\]
+\[
+\alpha_{\text{brass}} = 19 \times 10^{-6} \, \text{°C}^{-1}, \quad \alpha_{\text{iron}} = 12 \times 10^{-6} \, \text{°C}^{-1}
+\]
+\[
+d_{\text{p}}(T) = d_{\text{r}}(T)
+\]
+\[
+d_{\text{p}}(T) = d_{\text{p, 15°C}} \left(1 + \alpha_{\text{brass}} (T - 15)\right)
+\]
+\[
+d_{\text{r}}(T) = d_{\text{r, 15°C}} \left(1 + \alpha_{\text{iron}} (T - 15)\right)
+\]
+\[
+d_{\text{p, 15°C}} \left(1 + \alpha_{\text{brass}} (T - 15)\right) = d_{\text{r, 15°C}} \left(1 + \alpha_{\text{iron}} (T - 15)\right)
+\]
+\[
+8.756 \left(1 + 19 \times 10^{-6} (T - 15)\right) = 8.742 \left(1 + 12 \times 10^{-6} (T - 15)\right)
+\]
+\[
+8.756 + 8.756 \times 19 \times 10^{-6} (T - 15) = 8.742 + 8.742 \times 12 \times 10^{-6} (T - 15)
+\]
+\[
+8.756 + 0.000166364 (T - 15) = 8.742 + 0.000104904 (T - 15)
+\]
+\[
+0.000166364 (T - 15) - 0.000104904 (T - 15) = 8.742 - 8.756
+\]
+\[
+0.00006146 (T - 15) = -0.014
+\]
+\[
+T= \frac{-0.014}{0.00006146} + 15=  \boxed{\qty{-212.8}{\degree C}}
+\]
 
 % Problem 30
 \setcounter{questionCounter}{29}
 \question
-
+\begin{alphaparts}
+\questionpart
+\[
+T_K = T_C + 273.15 = 58 + 273.15 = \boxed{\qty{331.15}{K}}
+\]
+\questionpart
+\[
+T_K = \frac{5}{9}T_F + 255.37 = \frac{5}{9}(86)+255.37 = \boxed{\qty{303.15}{K}}
+\]
+\questionpart
+\[
+T_K = T_C + 273.15 = -55 + 273.15 = \boxed{\qty{218.15}{K}}
+\]
+\questionpart
+\[
+T_K = T_C + 273.15 = 5100 + 273.15 = \boxed{\qty{5373.15}{K}}
+\]
+\end{alphaparts}
 
 % Problem 33
 \setcounter{questionCounter}{32}
 \question
+\begin{alphaparts}
+\questionpart
+\[
+T_K = T_C + 273.15 = 4000 + 273.15 = \boxed{\qty{4273.15}{K}}
+\]
+\[
+    T_K = T_C + 273.15 = 15\,000\,000 + 273.15 = \boxed{\qty{15000273.15}{K}}
+\]
+\questionpart
+\[
+\frac{273.15}{4273.15} \cdot 100\% = \boxed{\qty{6.39}{\%}}
+\]
+\[
+    \frac{273.15}{15\,000\,273.15} \cdot 100\% = \boxed{\qty{0.001821}{\%}}
+\]
 
+
+\end{alphaparts}
 
 % Problem 34
 \question
+\[
+P_1 = 1 \, \text{atm}, \quad T_1 = 20^\circ \text{C} = 293 \, \text{K}
+\]
+\[
+P_2 = 40 \, \text{atm}, \quad \frac{V_2}{V_1} = \frac{1}{9}
+\]
+\[
+\frac{P_1V_1}{T_1}=\frac{P_2V_2}{T_2}
+\]
+\[
+T_2 = T_1(\frac{P_2}{P_1})(\frac{V_2}{V_1}) = (293)(40)(\frac{1}{9}) = \boxed{\qty{1302}{K}}
+\]
 
 
 % Problem 35
 \question
+\[
+T_1 = \qty{273.15}{K}, \quad T_2 = \qty{38.0}{\degree C} = \qty{311.15}{K}, \quad P = \qty{2.80}{atm} = \qty{283.64}{kPa}, \quad V = \qty{3.50}{m^3}
+\]
+\[
+    \frac{P_1V_1}{T_1} = \frac{P_2V_2}{T_2}
+\]
+\[
+V_2 = \frac{P_1V_1T_2}{P_2T_1} = \frac{(1)(3.50)(311.15)}{(2.80)(273.15)} =  \boxed{\qty{1.42}{m^3}}
+\]
 
 
 % Problem 37
 \setcounter{questionCounter}{36}
 \question
+\[
+PV=nRT
+\]
+\[
+n = \frac{m}{M}
+\]
+\[
+PV = \frac{mRT}{M}
+\]
+\[
+\frac{m}{V}=\frac{PM}{RT}=\frac{(101325)(28.02)}{(8.314)(273.15)} = \boxed{\qty{1.25}{kg / m^3}}
+\]
 
 
 % Problem 43
 \setcounter{questionCounter}{42}
 \question
+\[
+T_1 = \qty{30.0}{\degree C} = \qty{303.15}{K}
+\]
+\[
+V = V_1 = V_2
+\]
+\[
+\frac{P_1V}{T_1} = \frac{P_2V}{T_2}
+\]
+\[
+\frac{P_1}{T_1} = \frac{P_2}{T_2}
+\]
+\[
+    T_2 = \frac{T_1P_2}{P_1} = \frac{(303.15)(2)}{(1)} = \qty{606.3}{K} = \boxed{\qty{333.15}{\degree C}}
+\]
 
 
 \end{document}
